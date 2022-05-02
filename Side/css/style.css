@@ -1,0 +1,54 @@
+html{height: 100%;}
+body{
+	min-height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:min-content min-content min-content;
+	grid-template-areas: "header header" "video molekyl" "dna dna";
+}
+header{padding: 1rem; grid-area: header;}
+h1{
+	padding: 0;
+	margin: 0;
+}
+
+#videoArea, #molekylArea, #dnaArea{padding: 20px;}
+#videoArea{grid-area: video;}
+#video{max-width: 100%;}
+#playPause{
+	display: flex;
+	align-items: center;
+	color: inherit;
+	text-decoration: none;
+}
+#playPauseImg{
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+}
+#molekylArea{grid-area: molekyl;}
+#molekylImages{
+	display: flex;
+}
+.molekylBox{
+	padding: 5px;
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.molekylIMG{
+	width: 100%;
+	-webkit-user-drag: none;
+}
+.molekylIMG:hover{
+	opacity: 0.75;
+	width: 95%;
+}
+
+#dnaArea{
+	grid-area: dna;
+}

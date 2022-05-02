@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proteinsyntese</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header><h1>Proteinsyntese</h1></header>
+	<div id="videoArea">
+		<video id="video" muted loop>
+			<source src="media/Video_Liten.mp4" type="video/mp4">
+		</video>
+		<a id="playPause" href="#"><img id="playPauseImg" src="media/play.svg" alt="Play"><span id="playPauseText">Play</span></a>
+	</div>
+	<div id="molekylArea">
+		<div id="molekylImages">
+			<div class="molekylBox" id="oksygenEl" href=""><img class="molekylIMG"  src="media/Oksygen.png" alt="Oksygen"></div>
+			<div class="molekylBox" id="nitrogenEl" href=""><img class="molekylIMG" src="media/Nitrogen.png" alt="Nitrogen"></div>
+			<div class="molekylBox" id="karbonEl" href=""><img class="molekylIMG" src="media/Karbon.png" alt="Karbon"></div>
+		</div>
+		<h2 id="molekylText">&nbsp;</h2>
+		<label for="atomCount">Antall atomer:&nbsp;</label><input type="number" name="atomCount" id="atomCount" max="50">
+		<h3 id="atomRess"></h3>
+	</div>
+	<div id="dnaArea">
+		<h2>AminosyreKoding</h2>
+		<textarea id="dnaText" placeholder="Skriv inn en dna-streng.">GCTGCCGCAGCGTGTTGCTTTTTCCAACAGTGG</textarea>
+		<h3 id="dnaError"></h3>
+		<table id="dnaOutTbl"></table>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
